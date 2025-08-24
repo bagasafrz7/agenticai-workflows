@@ -1,8 +1,9 @@
 from dotenv import load_dotenv
-from openai import OpenAI
 from tavily import TavilyClient
+from langfuse.openai import openai
+
 
 load_dotenv()
 
-openai_client = OpenAI()
+openai_client = openai
 tavily_client = TavilyClient()
